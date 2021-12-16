@@ -1,8 +1,8 @@
 class Traveler {
-    constructor(nome, food = 1) {
+    constructor(nome, food = 1,isHealthy =true) {
         this._nome = nome
         this._food = food
-        this._isHealthy = true
+        this._isHealthy = isHealthy
     }
     get isHealthy() {
         return this._isHealthy
