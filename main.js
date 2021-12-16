@@ -18,15 +18,15 @@ class Traveler {
     }
 
     hunt() {
-        this._food += 2
+        this.food += 2
     }
 
     eat() {
-        if (this._food > 0) {
-            this._food -= 1
-            this._isHealthy = true
+        if (this.food > 0) {
+            this.food -= 1
+            this.isHealthy = true
         } else {
-            this._isHealthy = false
+            this.isHealthy = false
         }
 
     }
@@ -38,6 +38,14 @@ class Wagon {
         this._capacity = capacity
         this._passengers = passengers
     }
+
+    get capacity(){
+        return this._capacity
+    }
+    set capacity(valor){
+        this._capacity = valor
+    }
+
     getAvailableSeatCount() {
         let capacidade = this._capacity
         let pessoas = this._passengers.length
@@ -79,6 +87,7 @@ class Wagon {
     }
 
 }
+
 let wagon = new Wagon(2);
 
 let henrietta = new Traveler('Henrietta');
