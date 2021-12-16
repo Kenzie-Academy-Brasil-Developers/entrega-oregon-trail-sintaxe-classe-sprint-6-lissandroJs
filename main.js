@@ -88,6 +88,8 @@ class Wagon {
 
 }
 
+
+//TESTES
 let wagon = new Wagon(2);
 // Criar três viajantes
 let henrietta = new Traveler('Henrietta');
